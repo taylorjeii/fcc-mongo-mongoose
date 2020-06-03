@@ -2,7 +2,8 @@
 * 3. FCC Mongo & Mongoose Challenges
 * ==================================
 ***********************************************/
-
+const envi = require('dotenv')
+console.log(envi)
 /** # MONGOOSE SETUP #
 /*  ================== */
 
@@ -14,7 +15,7 @@ const mongoose = require("mongoose");
 // mongoose. Store your Mongo Atlas database URI in the private .env file 
 // as MONGO_URI. Connect to the database using the following syntax:
 //
-const mongoURI = process.ENV.MONGO_URI;
+const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 
